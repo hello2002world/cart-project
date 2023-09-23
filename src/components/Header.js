@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav'
 import Menu from '@mui/material/Menu';
 import { Table } from 'react-bootstrap'
 import { DELETE } from '../redux/actions/action';
-
+import cartImg from '../components/img/cart.gif'
 // import MenuItem from '@mui/material/MenuItem';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -115,7 +115,7 @@ const Header = () => {
                                     onClick={handleClose}
                                     style={{ position: "absolute", top: 2, right: 10, cursor: "pointer", fontSize: "20px" }}></i>
                                 <p style={{ fontSize: 20, marginTop: "8px" }}> Your Cart is Empty</p>
-                                <img src="./cart.gif" alt=''></img>
+                                <img src={cartImg} alt=''></img>
                             </div>
                     }
 
